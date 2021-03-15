@@ -1,0 +1,25 @@
+version: "3"
+services:
+  tlc-proxy:
+    container_name: proxy
+    image: jwilder/nginx-proxy
+    ports:
+    - '8080:80'
+    volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+  tlcl1:
+    image: nginx
+    environment:
+      VIRTUAL_HOST: m
+  tlcl2:
+    image: nginx
+    environment:
+      VIRTUAL_HOST: m
+  tlcl3:
+    image: nginx
+    environment:
+      VIRTUAL_HOST: m
+  tlcl4:
+    image: nginx
+    environment:
+      VIRTUAL_HOST: m

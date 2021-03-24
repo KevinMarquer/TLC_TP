@@ -29,6 +29,7 @@ tpcompose_tlcl4_1   /docker-entrypoint.sh ngin      Up      80/tcp
 
 
 ## Partie 2 #
+(Note le dockerfile est dans le dossier TPTest)
 
 Création d'un docker file pour lancé une application.
 
